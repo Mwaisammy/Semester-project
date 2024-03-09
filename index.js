@@ -60,3 +60,10 @@ function stickyHeader() {
   }
 }
 
+
+function redirectToSignup(){
+  window.location.href = "signup.html";
+}
+
+document.getElementById("signupLink").addEventListener("click", redirectToSignup)
+

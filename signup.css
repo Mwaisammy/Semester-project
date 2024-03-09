@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    padding: 50px;
+
+
+}
+
+.image_field img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.form_field{
+     border: 1px solid black;
+     padding: 30px 20px;
+     width: 500px;
+     /* max-width: 100%; */
+
+
+
+
+}
+
+.header p{
+    color: grey;
+    margin-top: 10px;
+}
+
+.main{
+    display: grid;
+}
+
+.main input{
+    padding: 15px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.check{
+    margin-top: 20px;
+
+}
+
+.signup{
+    margin-top: 20px;
+}
+.signup button{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.signup p{
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+
+
+}
+
+.signup span a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
