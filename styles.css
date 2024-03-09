@@ -5,20 +5,25 @@
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-header{
-    margin: 20px 50px;
 
-}
+
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    /* box-shadow: 0px 4px 6px rgb(255, 252, 252); */
+    width: 100%;
+    background-color: transparent;
+   
 }
 
 .nav-bar ul{
     display: flex;
     gap: 30px;
+    
 }
 
 .nav-bar ul li{
@@ -26,6 +31,7 @@ header{
 }
 .nav-bar ul li a{
     text-decoration: none;
+  
     
 }
 
@@ -33,20 +39,34 @@ header{
     display: flex;
     align-items: center;
     gap: 10px;
-}
-.nav-left li a{
-    color: black;
     
 }
+
+/* add */
+.nav-bar li {
+    list-style: none;
+    
+}
+
+
+/* add */
+.nav-left li a{
+  color: whitesmoke;    
+}
+
+
 .nav-left img{
     width: 100%;
     height: 40px;
     object-fit: contain;
 }
 
-.logo{
+/* add */
+.logo  a{
     font-size: 20px;
     font-weight: 600;
+    list-style: none;
+    text-decoration: none;
 }
 
 .nav-right{
@@ -62,11 +82,13 @@ header{
     font-weight: 600;
 }
 .login a{
-    color: gray;
+    color: black;
 }
 .login a:hover{
-    color: black;
+    color: rgb(61, 60, 60);
     transition: all 0.2s ease-in-out;
+   
+    
 
 }
 
@@ -78,6 +100,7 @@ header{
 .dropdown {
     float: left;
     overflow: hidden;
+    
   }
   
   .drop-btn {
@@ -85,13 +108,13 @@ header{
       border: none;
       outline: none;
 
-      color: black;
+      color: whitesmoke; /*add*/
       background-color: inherit;
       font-family: inherit;
       margin: 0;
     }
 
-   
+    
 
     /* .drop-btn i {
         margin-left: 5px;
@@ -105,7 +128,7 @@ header{
     min-width: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 3px;
-    z-index: 1;
+    /* z-index: 999; */
     padding: 10px 20px;
   }
 
@@ -116,12 +139,17 @@ header{
 
     padding: 10px; /* Add padding to the links */
     text-decoration: none;
+    color: black; /*add*/
+   
   }
   .drop-content a h3{
     font-weight: 500;
+    color: black; /*add*/
   }
   .drop-content a p{
     font-size: 15px;
+    color: black; /*add*/
+
     
   }
 
@@ -132,6 +160,7 @@ header{
     border-radius: 5px;
 
     transition: all 0.1s ease-in;
+   
 
   }
 
@@ -140,6 +169,670 @@ header{
     display: block;
    
 }
+.checkbtn{
+    color: black;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    display: none;
+
+}
+
+#mobile-menu{
+    display: none;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+    header{
+        margin: 20px 30px;
+    }
+   
+    .nav-bar ul{
+        display: flex;
+        gap: 20px;
+        margin-left: 40px;
+    }
+
+    .get-btn a{
+      
+        padding: 8px 15px;
+        border-radius: 10px;
+        font-weight: 400;
+    }
+
+
+
+    
+}
+
+@media screen and (max-width: 1030px) {
+    header{
+        margin: 20px 30px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    .check{
+        display: none;
+    }
+
+ 
+    
+      .nav-bar{
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 300px;
+      }
+      .nav-left{
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+
+
+ 
+    .menu-bar  {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+
+      
+
+      .menu a{
+        display: block;
+        padding: 10px;
+      }
+
+      .dropdown {
+        display: block;
+        width: 100%;
+      }
+
+      .drop-content {
+        position: static;
+        display: none;
+        padding-left: 10px;
+      }
+
+      .nav-right {
+        display: flex; /* Adjust display property to flex */
+        align-items: center;
+        z-index: 999;
+    
+        
+      }
+
+      .register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    
+      
+        
+        
+      }
+
+      .register a{
+        display: flex;
+        flex-direction: column;
+      }
+
+     
+
+    
+   
+    
+
+    
+   
+
+    .checkbtn{
+        font-size: 20px;
+        color: black;
+        float: left;
+        /* line-height: 80px; */
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    
+
+   
+
+  
+
+    
+
+
+    /* mobile menu */
+
+    
+
+  
+}
+
+
+
+.banner{
+  position: relative;
+  height: 488px;
+  /* color: white; */
+  object-fit: contain;
+  
+  /* background: rgba(0, 0, 0, 0.5);Dark overlay */
+  /* z-index: -1; */
+
+}
+
+
+.banner_details{
+  text-align: center;
+  padding-top: 80px;
+  color: white;
+}
+.banner_details h4{
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+
+}
+
+.banner_details p{
+  font-size: 20px;
+}
+
+.banner_details button{
+  border: none;
+  outline: none;
+  background-color: rgb(230, 67, 94);
+  padding: 15px 25px;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+}
+ /* Move the dark overlay below the content */ */
+
+ .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 1.2); /* Dark overlay */
+  pointer-events: none;
+  /* z-index: -1; Move the pseudo-element below the content */
+}
+
+
+/* .banner > *{
+  filter: brightness(.9);
+} */
+
+
+/* Main css styles */
+
+main{
+ 
+  
+  float: left;
+  flex: 3;
+ 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
+  justify-content: start;
+  gap: 50px 20px;
+
+  
+}
+
+
+.item0{
+  grid-column: 1 / 3;
+  border: .5px solid lightgray;
+  border-radius: 8px;
+  
+}
+
+.item0 img{
+  height: fit-content;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+
+
+}
+
+.item1{
+  border: .5px solid lightgray;
+  border-radius: 8px;
+  /* width: 500px; */
+  max-width: 100%;
+  
+  
+  
+}
+.item1 img{
+ height: fit-content;
+ max-width: 100%;
+ /* width: 500px; */ /* change here*/
+
+ object-fit: cover;
+ border-radius: 8px 8px 0px 0px;
+
+}
+
+.content{
+  padding: 20px 15px;
+}
+
+.content h4{
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.content p{
+  color: darkgray;
+  padding: 10px 0 50px 0;
+
+}
+
+.icons{
+  display: flex;
+  gap: 50px;
+ 
+}
+
+.icons i{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+  color: darkgrey;
+
+}
+.icons i h5{
+  font-weight: 500;
+}
+
+.item0:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: all .3s ease-out;
+}
+.item1:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: all .3s ease-out;
+}
+
+
+/* Aside content here */
+
+
+
+.main_container{
+  display: flex;
+  padding: 50px;
+}
+
+/* Aside content styles */
+
+
+aside{
+  float: right;
+  flex: 1;
+  padding-left: 40px;
+
+  
+}
+
+.search_field{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search_field input{
+  padding: 11px 50px 11px 15px;
+  border: 1px solid lightgray;
+  outline: none;
+
+}
+
+.search_field a{
+  background: rgb(230, 67, 94);
+  padding: 10px 15px;
+  border-radius: 3px;
+ 
+}
+.search_field a i{
+  font-size: 15px;
+  
+  color: whitesmoke;
+}
+
+/* Email field styles here */
+
+.email_field{
+  background-color: rgba(217, 217, 217, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+
+.email_field h2{
+  color:  rgb(230, 67, 94);
+  font: 20px;
+  font-weight: 400;
+}
+
+.email_field p{
+  padding-top: 10px;
+  font-weight: 400;
+  color: rgb(22, 22, 22);
+  
+}
+
+.email_details{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+
+}
+
+.email_details input{
+  padding: 10px 0px 10px 10px;
+  outline: none;
+  border: 1px solid lightgray;
+
+}
+.email_details a{
+  background: rgb(230, 67, 94);
+  padding: 11px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+/* .categories_container button*/
+
+.categories_container{
+  margin-top: 50px;
+  
+ 
+
+}
+
+#categories_drop{
+  padding: 10px ;
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid lightgray;
+  outline: none;
+  text-align: start;
+  cursor: pointer;
+
+}
+
+
+/* --> inline styling for the button */
+
+#categories_content{
+  
+  display: none;
+  padding: 10px 0 10px 0;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  background-color: #fff;
+  width: 281px;
+ 
+}
+
+#categories_content h5{
+  padding: 5px 18px;
+  font-size: 14px;
+  font-weight: 400;
+
+
+}
+
+#categories_content h5:hover{
+  background-color: rgba(217, 217, 217, 0.4);
+  cursor: pointer;
+
+}
+
+/* --> Post styles  css */
+
+.posts_container{
+  margin-top: 30px;
+ 
+}
+
+.posts_container h2{
+  margin: 20px 0;
+
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(65, 65, 65);
+}
+
+.posts{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom:20px;
+  cursor: pointer;
+
+
+}
+
+.posts img{
+  width: 90px; /* Set the desired width */
+  height: 75px; /* Set a greater height to make it appear taller */
+  object-fit: cover; /* Preserve the aspect ratio and cover the container */
+  border-radius: 5px;
+}
+
+.posts p{
+
+color: rgb(65, 65, 65);
+
+}
+
+.posts p:hover{
+  color:  rgb(225, 71, 97);
+  transition: all 0.1s ease-in;
+}
+
+
+
+
+/* Proms styles */
+
+.proms{
+  margin-top: 50px;
+  background-color: rgba(217, 217, 217, 0.2);
+  padding: 30px 20px;
+}
+
+.proms h3{
+font-size: 17px;
+ font-weight: 400;
+ color: rgb(67, 67, 67);
+ text-transform: uppercase;
+}
+
+.proms p{
+  margin: 20px 0px;
+  color: darkgrey;
+  font-size: 14px;
+
+
+}
+
+.proms button{
+  /* display: block; */
+  /* margin: 0 auto; This centers the button horizontally */
+  /* margin-top: 20px; */
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid rgb(225, 71, 97);
+  border-radius: 3px;
+  background: transparent;
+  font-size: 17px;
+  color: rgb(225, 71, 97);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.proms button:hover{
+  background-color: rgb(225, 71, 97);
+  transition: all .2s ease-in;
+  color: whitesmoke;
+}
+
+
+
+/* Footer */
+
+footer{
+  background: rgb(54, 53, 53);
+  gap: 80px;
+  padding:80px 50px 40px 50px;
+
+
+}
+
+.footer_top{
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+  
+  
+}
+
+.footer_top h3{
+  color: rgb(255, 249, 249);
+  font-weight: 500;
+
+
+}
+
+.socialHandles{
+
+
+  
+}
+
+
+
+.socialHandles a{
+  text-decoration: none;
+}
+.socialHandles a i{
+  display: flex;
+  gap: 0px 10px;
+  margin-top: 25px;
+  color: rgb(171, 169, 169);  /*color for a tags*/
+}
+
+
+
+.socialHandles i h4{
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.socialHandles a i:hover{
+  color: rgb(255, 249, 249);
+  transition: all .2s ease-in-out;
+}
+
+
+/* footer_content div */
+
+.footer_content ul li {
+list-style: none;
+margin-top: 25px;
+
+}
+
+.footer_content ul li a{
+  text-decoration: none;
+  color: rgb(171, 169, 169);
+
+}
+
+.footer_content ul li a:hover{
+  color: rgb(255, 249, 249);
+  transition: all .2s ease-in-out;
+
+}
+
+
+
+
+
+/* Footer bottom styles */
+
+.footer_bottom{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_left h4{
+  color: rgb(171, 169, 169);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.bottom_right{
+  display: flex;
+  gap: 20px;
+}
+
+.bottom_right a{
+  text-decoration: none;
+  color: rgb(171, 169, 169);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.bottom_right a:hover{
+  color: rgb(255, 249, 249);
+  transition: all .2s ease-in-out;
+
+}
+
+
+
+
+
+
+
 
 
 

@@ -9,24 +9,36 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="./assets/site.webmanifest">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-   </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>   </head>
 <body>
 
-    <header>
+    <header
+    class="banner" 
+    style="background-size: cover;
+         background-image: url(./assets/baclground.jpg);
+         background-position: center center;
+          ">
 
         <nav class="nav-bar">
-     
-         <div class="nav-left">
-             <img src="./assets/mockLogo.png" alt="logo">
-             <ul>
-                 <li class="logo"><a href="#home">Mockplus</a></li>
+           
+           <div class="nav-left">
+            <img src="./assets/mockLogo.png" alt="logo">
+            <li class="logo"><a href="#home">Mockplus</a></li>
+            
+             <div class="nav-menu" >
+                <input type="checkbox" id="mobile-menu" class="check">
+               <label for="mobile-menu" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                  
+               </label>
+             </div>
+             <ul class="menu-bar">
                  <li class="menu"><a href="#product">
                      
                      <div class="dropdown">
                          
-                         <button class="drop-btn">Products
-                           <!-- <i class="fa fa-caret-down" aria-hidden="true"></i>               -->
+                         <button class="drop-btn" style=" display: flex; gap: 5px; align-items: center;">Products
+                           <i class="fa fa-angle-down"style="margin-top: 5px; font-size: 15px;" aria-hidden="true"></i>
                         
                         </button>
     
@@ -61,9 +73,10 @@
                      
                     <div class="dropdown">
                         
-                        <button class="drop-btn" >Resource
-                           <!-- <i class="fas fa-caret-down"></i> -->
-                       </button>
+                     <button class="drop-btn" style="color: whitesmoke; display: flex; gap: 5px; align-items: center;">Resources
+                        <i class="fa fa-angle-down"style="margin-top: 5px; font-size: 15px;" aria-hidden="true"></i>
+                     
+                     </button>
    
                         <div class="drop-content" style=" align-items: flex-start;">
                             <a href="#">
@@ -96,7 +109,7 @@
      
          </div>
          <div class="nav-right">
-             <ul>
+             <ul class="register">
                 
                     <li class="login"><a href="#login">Log in</a></li>
                     <li class="get-btn"><a href="#getStarted">Get started for free</a></li>
@@ -107,21 +120,446 @@
      
       
          </div>
-     
-        </nav>
-    </header>
 
+         
+         
+      </nav>
+      <div class="banner_details">
+         <h4>Mockplus Blog</h4>
+         <p>Designing the best user experience. Mockplus does it all</p>
+   
+         <button>Get started for free</button>
+   
+      </div>
+   </header>
 
-
+<div class="main_container">
    <main>
-
-    <!-- main here-->
-
+   
+      <div class="container">
+         <div class="item0">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+   
+         <div class="item1">
+            <img src="./assets/first.jpg" alt="first">
+   
+            <div class="content">
+               <h4>Lorem ipsum dolor sit amet.</h4>
+   
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Sunt, corrupti reprehenderit explicabo error eos minima consequuntur similique dolorum corporis incidunt illum impedit pariatur sapiente!
+                   Libero eveniet quas sequi illo eius?</p>
+   
+                   <div class="icons">
+                      <i class="fa fa-user" aria-hidden="true">
+                         <h5>Jesse</h5>
+                      </i>
+                      <i class="far fa-clock"> 
+                         <h5>Feb 14</h5>
+                      </i>
+   
+   
+                      
+                   </div>
+                   
+                  </div>
+   
+   
+         </div>
+   
+   
+         
+   
+   
+         
+   
+         
+      
+   
+      </div>
+   
+   
    </main>
+   
+      
+   <aside>
+      <div class="search_field">
+         <input type="text" placeholder="Search...">
+        <a href="#">
+         <i class="fa fa-search"></i>
+        </a>
+   
+      </div>
+   
+      <div class="email_field">
+         <h2>Subscribe to our blog</h2>
+         <p>To get the latest and most quality design resources!</p>
+   
+         <div class="email_details">
+            <input type="text" placeholder="Email address">
+            <a href="">Sign me up</a>
+         </div>
+   
+   
+      </div>
+
+      <!-- Categories drop -->
+
+      <div class="categories_container">
+         <button id="categories_drop">
+            Categories
+            <i class="fa fa-caret-down" aria-hidden="true" style="float: right; margin-top: 3px; color: darkgray;"></i>
+         </button>
+         <div id="categories_content">
+            <h5>Inside Mockplus</h5>
+            <h5>UI Design</h5>
+            <h5>UX Design</h5>
+            <h5>Design and prototyping tools</h5>
+            <h5>Web design</h5>
+            <h5>Mobile design</h5>
+            <h5>Iteration Design</h5>
+            <h5>Product Design</h5>
+            <h5>News and events of UX Design</h5>
+            <h5>UX design guest posts</h5>
+
+         </div>
+      </div>
+
+
+      <!-- Posts -->
+
+      <div class="posts_container">
+         <h2>Popular posts</h2>
+         <div class="posts">
+            <img src="./assets/posts.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+
+         </div>
+         <div class="posts">
+            <img src="./assets/posts.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+
+         </div>
+         <div class="posts">
+            <img src="./assets/posts.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+
+         </div>
+         <div class="posts">
+            <img src="./assets/posts.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+
+         </div>
+
+      </div>
+
+
+      <!-- Proms -->
+
+
+      <div class="proms">
+         <h3>Mockplus RP</h3>
+         <p>Best wireframing and prototyping tool for APP and Web design</p>
+
+         <button>Get Started for Free</button>
+      </div>
+      <div class="proms">
+         <h3>Mockplus cloud</h3>
+         <p>One platform for design, prototype, hand-off and design systems.</p>
+
+         <button>Get Started for Free</button>
+      </div>
+   </aside>
+
+</div>
+
+
+
 
    <footer>
-    <!-- This is the footer -->
+      <div class="footer_top">
+
+       <div class="socialHandles">
+            <h3>Mockplus</h3>
+            <div class="social-handles-Icon">
+   
+               <a href="https://www.facebook.com/Mockplus">
+                  <i class="fa-brands fa-facebook-f">
+                     <h4>facebook</h4>
+                  </i>
+   
+               </a>
+               <a href="https://twitter.com/Mockplus">
+                  <i class="fa-brands fa-x-twitter">
+                     <h4>X</h4>
+                  </i>
+               </a>
+               <a href="https://www.linkedin.com/company/mockplus">
+                  <i class="fa-brands fa-linkedin-in">
+                     <h4>LinkedIn</h4>
+                  </i>
+   
+               </a>
+               <a href="https://www.youtube.com/c/Mockplustube">
+                  <i class="fa-brands fa-youtube">
+                     <h4>Youtube</h4>
+                  </i>
+               </a>
+               <a href="https://www.instagram.com/mockplus_official">
+                  <i class="fa-brands fa-instagram">
+                     <h4>Instagram</h4>
+                  </i>
+   
+               </a>
+   
+            </div>
+         </div>
+         <div class="footer_content">
+            <h3>Product</h3>
+   
+            <ul>
+               <li>
+                  <a href="#">Mockplus RP</a>
+               </li>
+               <li>
+                  <a href="#">Mockplus Cloud</a>
+               </li>
+               <li>
+                  <a href="#">Mockplus DT</a>
+               </li>
+               <li>
+                  <a href="#">Mockplus DS</a>
+               </li>
+            </ul>
+   
+         </div>
+         <div class="footer_content">
+            <h3>Use Cases</h3>
+            <ul>
+               <li><a href="#">Wireframing Tool</a></li>
+               <li><a href="#">UI design Tool</a></li>
+               <li><a href="#">UX design Tool</a></li>
+               <li><a href="#">Mockup design</a></li>
+               <li><a href="#">Remote Design</a></li>
+               <li><a href="#">Design Sytems</a></li>
+               <li><a href="#">Integrations</a></li>
+            </ul>
+   
+         </div>
+         <div class="footer_content">
+            <h3>Resources</h3>
+            <ul>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">New release</a></li>
+               <li><a href="#">What's new</a></li>
+               <li><a href="#">Free  templates</a></li>
+               <li><a href="#">Learn design</a></li>
+               <li><a href="#">Community</a></li>
+               <li><a href="#">Help center</a></li>
+            </ul>
+   
+         </div>
+         <div class="footer_content">
+            <h3>Compare</h3>
+            <ul>
+               <li><a href="#">In vision</a></li>
+               <li><a href="#">Zeplin</a></li>
+               <li><a href="#">Figma</a></li>
+               <li><a href="#">Sketch</a></li>
+               <li><a href="#">Axure</a></li>
+               <li><a href="#">Adobe XD</a></li>
+               <li><a href="#">Justinmind</a></li>
+            </ul>
+   
+         </div>
+         <div class="footer_content">
+            <h3>Company</h3>
+            <ul>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Contact us</a></li>
+               <li><a href="#">Mockplus for startup</a></li>
+               <li><a href="#">Mockplus for education</a></li>
+            </ul>
+   
+         </div>
+
+      </div>   
+
+      <div class="footer_bottom">
+         <div class="bottom_left">
+            <h4>© 2014-2024  Mockplus Technology Co., Ltd. @mwai_sam. All rights reserved</h4>
+
+         </div>
+         <div class="bottom_right">
+            <a href="https://www.mockplus.com/privacy">Privacy Policy</a>
+            <a href="https://www.mockplus.com/tos">Terms of Service</a>
+
+         </div>
+      </div>
    </footer>
+
+
+   <script src="index.js"></script>
     
 </body>
 </html>
